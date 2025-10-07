@@ -1,0 +1,64 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visualizador de Imagens"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <ImageView
+        android:id="@+id/imgFoto"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Imagem exibida"
+        android:scaleType="centerCrop"
+        android:src="@drawable/foto1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+        app:srcCompat="@drawable/foto1" />
+
+    <Button
+        android:id="@+id/btnImagem1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="#2196F3"
+        android:text="Mostrar Imagem 1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@id/btnImagem2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgFoto" />
+
+    <Button
+        android:id="@+id/btnImagem2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="315dp"
+        android:background="#1976D2"
+        android:text="Mostrar Imagem 2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnImagem1"
+        app:layout_constraintTop_toBottomOf="@id/imgFoto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
